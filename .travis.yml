@@ -5,10 +5,12 @@ go:
   - 1.9.x
   - master
 
+script:
+    - go test -v ./...
+    - go build -v ./...
+
 install:
     - go get -d -v ./...
 
-script:
-    - go build -v ./...
 os:
   - linux
