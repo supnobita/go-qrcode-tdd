@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 package main
 
 import (
@@ -22,6 +21,3 @@ func GenerateQRCode(code string) []byte {
 
 	return buf.Bytes()
 }
-=======
-//Test
->>>>>>> 090acc5be0a17df2e32af4b3a3604bd38500d516
