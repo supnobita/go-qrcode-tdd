@@ -19,8 +19,9 @@ func main() {
 }
 
 //function gen QR Code to byte array
-func GenerateQRCode(w io.Writer, code string) {
+func GenerateQRCode(w io.Writer, code string) error {
 	img := image.NewNRGBA(image.Rect(0, 0, 21, 21))
 	//buf := new(bytes.Buffer)
-	_ = png.Encode(w, img)
+	return png.Encode(w, img)
+	//return nil
 }
