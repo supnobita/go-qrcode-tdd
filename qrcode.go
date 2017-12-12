@@ -22,6 +22,6 @@ func main() {
 func GenerateQRCode(w io.Writer, code string) error {
 	img := image.NewNRGBA(image.Rect(0, 0, 21, 21))
 	//buf := new(bytes.Buffer)
-	return png.Encode(w, img)
-	//return nil
+	png.Encode(w, img)
+	return nil
 }
